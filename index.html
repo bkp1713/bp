@@ -1,94 +1,230 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Brandon's Personal Site</title>
-	</head>
-	<body>
-		<h1>Brandon Patrick</h1>
-		<p><em>Founder and CTO of the <strong><a href="https://www.oprahdaily.com/entertainment/g33810799/best-monica-songs/">App Brewery</a></strong></em></p>
-		<p>I am an IOS web developer. I love coffee and brew my own beers.</p>
 
-		<hr>
+<head>
+  <meta charset="utf-8">
 
-		<h3>Books and Teachings</h3>
-			<ul>
-				<li>The omplete IOS APP development bootcamp</li>
-				<li>The complete web development bootcamp</li>
-			</ul>
+  <title>TinDog</title>
 
-		<h3>My Hobbies</h3>
-			<ol>
-				<li>lots of things</li>
-				<li>other things</li>
-				<li>more things that I do</li>
-			</ol>
+<!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
 
-		<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1164126670.jpg?crop=1.00xw:0.599xh;0,0.0459xh&resize=980:*" alt="Beautiful Monica">
+<!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-		<hr>
+<!-- initial style sheet -->
+  <link rel="stylesheet" href="css/styles.css">
 
-		<table cellspacing="10">
-			<thead>
-			<tr>
-				<th>Dates</th>
-				<th>work history</th>
-			</tr>
-			</thead>
+<!-- tablet/phone dropdown script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+</head>
 
-			<tbody>
-				
-			</tbody>
+<body>
 
-			<tfoot>
-				
-			</tfoot>
+  <section id="title">
+    <div class="container-fluid">
 
-			<tr>
-				<td>Date</td>
-				<td>starting off as developer</td>
-			</tr>
-			<tr>
-				<td>new date</td>
-				<td>possible hiring</td>
-			</tr>
-		</table>
+    <!-- Nav Bar -->
 
-		<hr>
+      <nav class="navbar navbar-expand-lg navbar-dark">
 
-		<h3>Them Skills</h3>
-		
+        <a class="navbar-brand" href="">tindog</a>
 
-		</table>
-		<table cellspacing="10">
-		
-			<tr>
-				<td>proficient at nunchucks</td>
-				<td>★★★★★★★</td>
-				<td>proficient in roundhouse kicks</td>
-				<td>★★★★★★★</td>
-			</tr>
-			<tr>
-				<td>mean to my wife all the time</td>
-				<td>★★★★</td>
-				<td>some how she still loves me</td>
-				<td>★★★★★★</td>
-			</tr>
-		</table>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-		<hr>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
-		<form action="mailto:bpat1985@gmail.com" method="post" enctype="text/plain">
-			<label>Your name</label>
-			<input type="text" name="yourName"><br>
-			<label>Do you wanna sign up for the email list?</label>
-			<input type="checkbox" name=""><br>
-			<label>Email</label>
-			<input type="email" name="email"><br>
-			<label>Your message</label><br>
-			<textarea name="yourMessage"></textarea>
-			<input type="submit" name=""><br>
-		</form>
-	</body>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="new-font">Meet new and interesting dogs nearby.</h1>
+          <button type="button" class=" download-button btn btn-dark btn-lg download-button">Download</button>
+          <button type="button" class="download-button btn btn-outline-light btn-lg download-button">Download</button>
+        </div>
+        <div class="dog-phone col-lg-6">
+          <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    
+    <div class="container">
+
+      <div class="row">
+
+        <div class="feature-box col-lg-4">
+          <h3>Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <h3>Elite Clientele</h3>
+          <p>We have all the dogs, the greatest dogs.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <h3>Guaranteed to work.</h3>
+          <p>Find the love of your dog's life or your money back.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="false" >
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+      <img class="test-color" src="images/dog-img.jpg" alt="dog-profile">
+      <em>Pebbles, New York</em>
+    </div>
+    <div class="carousel-item">
+      <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+      <img class="test-color" src="images/lady-img.jpg" alt="lady-profile">
+      <em>Beverly, Illinois</em>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    
+
+    
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo-shorter" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo-shorter" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo-shorter" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo-shorter" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+    <div class="row justify-content-md-center">
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+              <h3>Chihuahua</h3>
+          </div>
+              <div class="card-body">
+                  <h2>Free</h2>
+                  <p>5 Matches Per Day</p>
+                  <p>10 Messages Per Day</p>
+                  <p>Unlimited App Usage</p>
+                  <div class="d-grid gap-2">
+                    <button type="button" class="btn-outline-dark">Sign Up</button>
+                  </div>  
+              </div>
+          </div> 
+        </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+              <h3>Labrador</h3>
+          </div>
+              <div class="card-body">
+                  <h2>$49 / mo</h2>
+                  <p>Unlimited Matches</p>
+                  <p>Unlimited Messages</p>
+                  <p>Unlimited App Usage</p>
+                  <div class="d-grid gap-2">
+                    <button type="button" class="btn-dark">Sign Up</button>
+                  </div>  
+              </div>
+        </div>
+      </div>    
+      <div class="pricing-column col">
+        <div class="card">  
+          <div class="card-header">
+              <h3>Mastiff</h3>
+          </div>
+              <div class="card-body">
+                  <h2>$99 / mo</h2>
+                  <p>Pirority Listing</p>
+                  <p>Unlimited Matches</p>
+                  <p>Unlimited Messages</p>
+                  <p>Unlimited App Usage</p>
+                  <div class="d-grid gap-2">
+                    <button type="button" class="btn-dark">Sign Up</button>
+                  </div>  
+              </div>
+        </div>
+      </div>
+    </div>          
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="cta-adjustment">Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="download-button btn btn-lg btn-light">Download</button>
+    <button type="button" class="download-button btn btn-lg btn-dark">Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <p>© Copyright TinDog</p>
+
+  </footer>
+
+
+</body>
+
 </html>
